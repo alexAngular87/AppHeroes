@@ -1,3 +1,11 @@
-<p>
-  search works!
-</p>
+<h1>Resultado: </h1>
+<div *ngFor="let heroes of heroes" class="card" style="width: 18rem;">
+    <img [src]='heroes.img' class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{heroes.nombre}}</h5>
+        <p class="card-text">{{heroes.bio}}</p>
+        <button [routerLink]="['/heroes']" type="button" class="btn btn-outline-primary btn-block">
+        Volver
+    </button>
+    </div>
+</div>
