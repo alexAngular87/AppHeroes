@@ -1,6 +1,10 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">
+<<<<<<< HEAD
         <img src="./assets/img/A-64.png" width="30" height="30" alt="">
+=======
+        <img src="assets/A-64.png" width="30" height="30" alt="">
+>>>>>>> 70e3a2c9e4e46fc61c77525724fe6897ea32c006
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -9,6 +13,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item" routerLinkActive="active">
+<<<<<<< HEAD
                 <a class="nav-link" [routerLink]="['/inicio']">inicio<span class="sr-only"></span></a>
             </li>
             <li class="nav-item" routerLinkActive="active">
@@ -21,6 +26,20 @@
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Buscar heroe" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+=======
+                <a class="nav-link" [routerLink]="['/index']">Inicio<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" [routerLink]="['/about']">Acerca de</a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" [routerLink]="['/heroes']">Heroes</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="buscar heroe" (keyup.enter)="buscarHeroe(buscarTexto.value)" #buscarTexto>
+            <button (click)="buscarHeroe(buscarTexto.value)" class="btn btn-outline-success my-2 my-sm-0" type="button">Buscar</button>
+>>>>>>> 70e3a2c9e4e46fc61c77525724fe6897ea32c006
         </form>
     </div>
 </nav>

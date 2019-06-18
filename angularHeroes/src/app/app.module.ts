@@ -9,6 +9,7 @@ import { HeroesComponent } from './components/heroes/heroes.component';
 import { HeroeComponent } from './components/heroe/heroe.component';
 import { SearchComponent } from './components/search/search.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
     HeroesComponent,
     HeroeComponent,
     SearchComponent,
-    NavbarComponent
+    NavbarComponent,
+    HeroeTarjetaComponent
   ],
   imports: [
     BrowserModule,
