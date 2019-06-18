@@ -1,11 +1,5 @@
-<h1>Resultado: </h1>
-<div *ngFor="let heroes of heroes" class="card" style="width: 18rem;">
-    <img [src]='heroes.img' class="card-img-top" alt="...">
-    <div class="card-body">
-        <h5 class="card-title">{{heroes.nombre}}</h5>
-        <p class="card-text">{{heroes.bio}}</p>
-        <button [routerLink]="['/heroes']" type="button" class="btn btn-outline-primary btn-block">
-        Volver
-    </button>
-    </div>
+<div *ngIf="heroes==0" class="alert alert-danger" role="alert">No existen resultados.</div>
+<h1 *ngIf="heroes!=0">Resultado de búsqueda: {{termino}}</h1>
+<div class="card-columns">
+    <app-heroe-tarjeta [heroe]="heroes" [index]="i" *ngFor="let heroes of heroes"></app-heroe-tarjeta>
 </div>

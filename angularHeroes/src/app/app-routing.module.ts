@@ -12,6 +12,7 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'heroe/:id', component: HeroeComponent },
   { path: 'search/:termino', component: SearchComponent },
+  { path: '**', component: HomeComponent },
 ];
 
 @NgModule({
